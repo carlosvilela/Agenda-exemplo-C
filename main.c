@@ -91,14 +91,9 @@ do{
     printf("No. Reg:  %d\n",atual->NumReg);
     printf("Preco:  %.2f\n\n",atual->Preco);
 
-if(atual->Proximo == (Livro*)NULL){
-break;
-}else{
 atual = atual->Proximo;
-}
 
-
-}while(atual->Proximo);
+}while(atual->Proximo == (Livro*)NULL);
 }
 
 
